@@ -60,11 +60,11 @@ function M.getOpenvpn(params)
 end
 
 function M.restartOpenVpn(params)
-  os.execute('/etc/init.d/openvpn restart')
+	os.execute('/etc/init.d/openvpn restart')
 end
 
 function M.readFile(params)
-  local arr = {}
+	local arr = {}
 
 	local f = io.open(params.path, "r")
 	if f~=nil then
@@ -83,7 +83,7 @@ function M.readFile(params)
 end
 
 function M.createFile(params)
-  os.execute('touch "' ..params.path..'"')
+	os.execute('touch "' ..params.path..'"')
 	os.execute('echo "OpenVPN STATISTICS" > "' ..params.path..'"')
 	os.execute('echo "Updated,2022-03-04 08:08:08" >> "' ..params.path..'"')
 	os.execute('echo "TUN/TAP read bytes,0" >> "' ..params.path..'"')
@@ -95,7 +95,7 @@ function M.createFile(params)
 end
 
 function M.deleteFile(params)
-  os.execute('rm -fr "' ..params.path..'"')
+	os.execute('rm -fr "' ..params.path..'"')
 end
 
 function M.delete_keys(params)

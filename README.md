@@ -1,5 +1,5 @@
 # vuci-openvpn
-Vuci OpenVPN client and server configuration application.
+Vuci OpenVPN client and server configuration application.<br />
 Authentication: Static key, TLS.
 
 #### Main page:
